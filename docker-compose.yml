@@ -74,6 +74,7 @@ services:
 
   debezium:
     image: debezium/connect:latest
+    platform: linux/amd64
     container_name: debezium
     hostname: debezium
     depends_on:
@@ -105,6 +106,7 @@ services:
 
   debezium-ui:
     image: debezium/debezium-ui:latest
+    platform: linux/amd64
     container_name: debezium-ui
     hostname: debezium-ui
     depends_on:
